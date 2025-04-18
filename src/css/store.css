@@ -1,0 +1,169 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid #D3D3F3;
+  margin: 20px;
+  
+}
+
+.header img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.header .info {
+  flex-grow: 1;
+}
+
+.header .info h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.header .info .rating {
+  color: #FFD700;
+}
+
+.header .info .rating .fa-star,
+.header .info .rating .fa-star-half-alt {
+  margin-right: 5px;
+}
+
+.header .info .rating span {
+  color: #000;
+  font-size: 14px;
+}
+
+.header .follow-btn {
+  background-color: #8B5E3C;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: auto; /* จะทำให้ header ชิดขวา */
+    width: fit-content; /* ให้เนื้อหาจัดอยู่ที่ความกว้างของมันเอง */
+}
+
+/* เพิ่มส่วนของ content container */
+.content-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.section-title {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.product-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  width: calc(33.333% - 10px);
+  box-sizing: border-box;
+}
+
+.product-item img {
+  width: 60%;
+  height: auto;
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+}
+
+.product-item .product-info {
+  text-align: center;
+}
+
+.product-item .product-info h2 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.product-item .product-info p {
+  color: #888;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.product-item .product-info .rating {
+  color: #FFD700;
+}
+
+.product-item .product-info .rating .fa-star,
+.product-item .product-info .rating .fa-star-half-alt {
+  margin-right: 5px;
+}
+
+.product-item .product-info .rating span {
+  color: #000;
+  font-size: 14px;
+}
+
+.product-item .product-info .price {
+  color: #FF0000;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.product-item .product-info .price span {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 14px;
+  margin: 0 5px;
+}
+
+@media (max-width: 1200px) {
+  .content-wrapper {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-item {
+    width: calc(50% - 7.5px);
+  }
+  
+  .content-wrapper {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-item {
+    width: 100%;
+  }
+  
+  .content-wrapper {
+    max-width: 100%;
+  }
+}

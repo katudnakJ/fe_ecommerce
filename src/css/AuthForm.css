@@ -1,0 +1,129 @@
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f4f6;
+    padding: 20px;
+  }
+  
+  .auth-card {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .auth-tabs {
+    display: flex;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .tab-button {
+    flex: 1;
+    padding: 16px;
+    border: none;
+    background: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #6b7280;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .tab-button.active {
+    color: #3b82f6;
+    border-bottom: 2px solid #3b82f6;
+  }
+  
+  .auth-form-container {
+    padding: 24px;
+  }
+  
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-group {
+    position: relative;
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 8px 12px 8px 40px;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-group input:focus {
+    outline: none;
+    border-color: #3b82f6;
+  }
+  
+  .submit-button {
+    background-color: #3b82f6;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #2563eb;
+  }
+  
+  .error-message {
+    color: #ef4444;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .forgot-password {
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .forgot-password a {
+    color: #6b7280;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .forgot-password a:hover {
+    color: #3b82f6;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 480px) {
+    .auth-card {
+      margin: 0;
+      border-radius: 0;
+    }
+    
+    .auth-form-container {
+      padding: 16px;
+    }
+  }

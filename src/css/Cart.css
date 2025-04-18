@@ -1,0 +1,180 @@
+.cart-container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+/* Content wrapper style */
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Main content of the page */
+.main-content {
+    width: 100%;
+}
+
+/* Page title styling */
+.page-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Product count styling */
+.product-count {
+    color: #888;
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* Loading text styling */
+.loading {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #555;
+}
+
+/* Product grid container */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Individual product card */
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Product details inside card */
+.product-details {
+    text-align: center;
+}
+
+.product-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.product-brand {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Product price section */
+.product-price {
+    font-size: 1.1rem;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+/* Product quantity section */
+.product-quantity {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Product total price section */
+.product-totalprice {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Centered text */
+.text-center {
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+.product-image {
+    width: 100px; /* or any preferred size */
+    height: 100px;
+    object-fit: cover; /* Ensure image covers the div */
+    border-radius: 8px; /* Optional: add rounded corners */
+    margin-bottom: 10px; /* Add spacing between image and other details */
+  }
+
+  .delete-button {
+    background-color: red; /* Red background */
+    color: white; /* White text */
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .delete-button:hover {
+    background-color: darkred; /* Darker red on hover */
+  }
+
+  .cart-container {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    height: 100vh; /* Full viewport height */
+    justify-content: space-between; /* Ensure space between elements */
+  }
+  
+  .content-wrapper {
+    flex-grow: 1; /* Allow content-wrapper to take up the remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+  }
+  
+  .main-content {
+    flex-grow: 1; /* Allow main content to take up available space */
+  }
+  
+  .cart-total, .buy-button-container {
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Ensure there is some space between the cart items and the total/buy button */
+  }
+  
+  .buy-button-container {
+    margin-top: 10px; /* Add some space before the button */
+  }
+  
+  .buy-button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Example button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .buy-button:hover {
+    background-color: #45a049; /* Button hover effect */
+  }

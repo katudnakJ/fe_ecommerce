@@ -36,3 +36,72 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* เปลี่ยนสีลูกศร Carousel เป็นสีดำ */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #ae9371;
+  background-size: 100%, 100%;
+  border-radius: 100%;
+}
+
+
+.nav-link:Hover{
+  color: black;
+  text-decoration-line:underline;
+}
+
+/* .btn[type="submit"]:hover[type="submit"]{
+  outline: auto;
+} */
+
+.btn[type="submit"]:hover[type="submit"]:hover {
+  background-color: #8c7b5c; /* เปลี่ยนสีพื้นหลังเมื่อเอาเมาส์ไปชี้ */
+  color: white;
+  border-radius: 20%;
+}
+
+/*Scroll to top*/
+.button-fixed {
+  position: fixed;
+  bottom: 20px;  /* ระยะห่างจากด้านล่าง */
+  right: 20px;   /* ระยะห่างจากด้านขวา */
+  width: 50px; height: 50px;
+  background-color: #ae9371;
+  border: 2px solid rgb(255, 255, 255);  /* ขอบสีดำ */
+  
+  border-radius: 100%;
+  cursor: pointer;
+  display: none;  /* ซ่อนปุ่มเริ่มต้น */
+  z-index: 9999;  /* ทำให้ปุ่มอยู่เหนือองค์ประกอบอื่น */
+}
+.button-fixed.show {
+  display: block; /* แสดงปุ่มเมื่อเลื่อนลงมา */
+}
+.button-fixed.show:hover{
+  background-color: #000000;
+  border: 2px solid rgb(0, 0, 0);  /* ขอบสีดำ */
+}
+
+#dropdown-basic-button{
+  color: #ffffff;
+  width: 160px;
+  height: 40px;
+  background-color:#ae9371;
+  border: #8c7b5c;
+  position:absolute;
+          right: 0;
+}
+#dropdown-basic-button:hover{
+  background-color: #ffffff;
+  border: 2px solid rgb(0, 0, 0);  /* ขอบสีดำ */
+  color: #000000;
+}
+.dropdown-item:hover{
+  background-color: #ffffff;
+  border: 1px solid rgb(0, 0, 0);  /* ขอบสีดำ */
+  color: #000000;
+}
+
+  
